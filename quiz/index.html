@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quiz app</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="https://play-lh.googleusercontent.com/o78VH5AmgfcODG2B2qY65tN28QlHu1hGQmfqu7aGiT9DzZDmp1810seELanV-uH2y0Y" type="image/x-icon">
+</head>
+<body onload="nextQuestion()">
+    <div class="container">
+     <div id="img">
+        <img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDw3BEGlkDcPf6BfCYP_UaDAx80Zk30nTjiS4ZpgtfNw&s"><br><br><br><br><br><br><br><br>
+    </div>   
+    <h2 id="timer">2:00</h2>
+    <h1>Quiz app</h1>
+        <p id="ques"></p>
+        
+        <input onclick="target()" value="1" type="radio" name="option" >
+        <label  id="opt1"></label>
+        <br><br>
+        <input onclick="target()" value="2" type="radio" name="option" >
+        <label  id="opt2"></label>
+        <br><br>
+        <input onclick="target()" value="3" type="radio" name="option" >
+        <label  id="opt3"></label>
+        <br><br>
+        <button disabled id="btn" onclick="nextQuestion()">Next</button>
+        
+    </div>
+</body>
+<script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</html>
+</body>
+</html>

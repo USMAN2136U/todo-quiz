@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+
+    <style>
+      .editBtn {
+        background-color: brown;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome USER!!</h1>
+
+    <button onclick="logout()">Logout</button>
+    <div style="text-align: center">
+      <h1>Todo App</h1>
+
+      <input type="text" id="todoInput" />
+      <input type="text" id="imageUrlInput" placeholder="Enter image URL">
+
+      <button onclick="addTodo()">Add Todo</button>
+      <button onclick="delteAll()">Delete All</button>
+    </div>
+
+    <div>
+      <ul id="list"></ul>
+    </div>
+    <a href="./quiz/index.html"></a>
+  </body>
+  <script src="app.js"></script>
+  <!-- <script src="app.js1"></script> -->
+
+</html>
